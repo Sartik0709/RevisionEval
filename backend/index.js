@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   try {
-    res.status(200).json({ message: "Server Home Page" });
+    res.send("This is the  Home Page ");
   } catch (error) {
     res.status(400).json({ message: error });
   }
